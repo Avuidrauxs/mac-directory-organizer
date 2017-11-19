@@ -58,3 +58,9 @@ do
 		echo "***********************************"
 	fi
 done
+
+#show cuurent directory
+pwd
+
+#show long formats of files and alos hidden files
+ls -la
