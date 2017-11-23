@@ -42,10 +42,10 @@ do
 	then
 		if [[ -d  "$PICTURES" ]]
 		then
-			mv "$d" "$PICTURES"
+			cp "$d" "$PICTURES"
 		else
 			mkdir $PICTURES
-			mv "$d" "$PICTURES"
+			cp "$d" "$PICTURES"
 		fi
 	else 
 		echo "***********************************"
@@ -64,3 +64,9 @@ pwd
 
 #show long formats of files and alos hidden files
 ls -la
+
+
+#Redirection and piping
+touch organize-output.txt
+ls -l | grep ".jpg" > organize-output.txt
+ 
